@@ -3,7 +3,7 @@ name: Compile Kernel
 on:
   workflow_dispatch:
     inputs:
-      clang_version: clang-r563880c
+      clang_version:
         description: Type the clang version of ur kernel
         required: true
         type: choice
@@ -16,7 +16,7 @@ on:
           - clang-r547379   #lineage-23.0 in android16-qpr3-release
           - clang-r563880c  #lineage-23.2 in android16-qpr3-release
           
-      kernel_source: crdroidandroid
+      kernel_source:
         description: Kernel Source Code
         required: true
         type: choice
@@ -25,13 +25,13 @@ on:
           - crdroidandroid
           - OnePlus12R-development
           
-      kernel_branch: 16.0
+      kernel_branch:
         description: Kernel Branch(such as lineage-23.2 sixteen-qpr1)
         required: true
         type: string
         default: ""
         
-      ksu_type: KernelSU-Next-with-susfs
+      ksu_type:
         description: "KernelSU Version"
         required: true
         type: choice
