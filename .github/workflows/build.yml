@@ -218,6 +218,10 @@ jobs:
       checks: read
     steps:
       - uses: actions/checkout@v4
+
+- name: Configure Git Token
+  run: git config --global url."https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/".insteadOf "https://github.com/"
+
       
       - name: Setup SWAP
         uses: pierotofy/set-swap-space@master
