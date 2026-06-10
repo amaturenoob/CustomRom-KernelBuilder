@@ -25,7 +25,7 @@ on:
           - crdroidandroid
           - OnePlus12R-development
           
-      kernel_branch:
+      kernel_branch: 16.0
         description: Kernel Branch(such as lineage-23.2 sixteen-qpr1)
         required: true
         type: string
