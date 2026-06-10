@@ -1,3 +1,11 @@
+
+- name: Configure Git Credentials
+  run: |
+    git config --global url."https://x-access-token:${{ secrets.GITHUB_TOKEN }}@://github.com".insteadOf "https://://github.com"
+
+
+
+
 name: Compile Kernel
 
 on:
