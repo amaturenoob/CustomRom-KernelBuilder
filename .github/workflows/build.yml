@@ -84,7 +84,7 @@ on:
         description: "Kernel-Branch: such as lineage-23.2 sixteen-qpr1 etc."
         required: true
         type: string
-        default: "lineage-23.2"
+        default: "16.0"
         
       kernel_configs:
         description: "Kernel-Configs: Select ur kernel configs(Use Manual-Type to custom it)"
