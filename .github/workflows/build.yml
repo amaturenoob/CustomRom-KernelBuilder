@@ -28,7 +28,7 @@ on:
         description: "SOC: Type your soc"
         required: true
         type: string
-        default: "sm8550"
+        default: "sm8350"
 
       clang_version:
         description: "Clang-Version: Select the clang version of ur kernel"
@@ -47,7 +47,7 @@ on:
         description: "Kernel-Source: Kernel repo's org/user on github"
         required: true
         type: choice
-        default: LineageOS
+        default: crdroidandroid
         options:
           - Manual-Type
           - LineageOS
